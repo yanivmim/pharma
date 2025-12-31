@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Copier l’email</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      padding: 24px;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+    .email {
+      font-size: 20px;
+      padding: 14px;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      word-break: break-all;
+      background-color: #fff;
+    }
+    button {
+      padding: 14px 16px;
+      font-size: 16px;
+      border-radius: 12px;
+      border: 1px solid #ddd;
+      cursor: pointer;
+      background-color: #f0f0f0;
+    }
+    button:hover {
+      background-color: #eaeaea;
+    }
+    .ok {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #1a8917;
+    }
+  </style>
+</head>
+<body>
+  <h1>Email</h1>
+  <!-- Remplace l'adresse ci‑dessous par ton adresse email -->
+  <div class="email" id="email">contact@example.com</div>
+  <button id="copy">Copier l’email</button>
+  <div class="ok" id="status"></div>
+
+  <script>
+    const email = document.getElementById('email').textContent;
+
+    async function copyEmail() {
+      try {
+        await navigator.clipboard.writeText(email);
+        document.getElementById('status').textContent = "✅ Email copié";
+      } catch (e) {
+        document.getElementById('status').textContent = "👉 Appuie sur \"Copier l’email\"";
+      }
+    }
+
+    // Tentative de copie automatique. Peut fonctionner sur certains navigateurs Android.
+    copyEmail();
+    document.getElementById('copy').onclick = copyEmail;
+  </script>
+</body>
+</html>
