@@ -15,107 +15,92 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
             background: #F5F1ED;
             min-height: 100vh;
-            padding: 32px 20px;
+            padding: 40px 20px;
         }
 
         .container {
-            max-width: 420px;
+            max-width: 440px;
             margin: 0 auto;
         }
 
         .header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 48px;
         }
 
-        .logo {
-            width: 80px;
-            height: 80px;
-            background: white;
-            border-radius: 50%;
-            display: inline-flex;
+        .logo-text {
+            display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            gap: 12px;
+            margin-bottom: 32px;
         }
 
-        .logo svg {
-            width: 44px;
-            height: 44px;
+        .logo-icon {
+            width: 32px;
+            height: 32px;
         }
 
-        .brand-name {
-            font-size: 18px;
-            font-weight: 700;
+        .brand-text {
+            font-size: 20px;
+            font-weight: 600;
             color: #1a1a1a;
-            margin-bottom: 8px;
             letter-spacing: -0.3px;
         }
 
         h1 {
-            font-size: 24px;
-            font-weight: 400;
+            font-size: 32px;
+            font-weight: 700;
             color: #1a1a1a;
-            letter-spacing: -0.5px;
+            letter-spacing: -0.8px;
+            margin-bottom: 12px;
         }
 
-        h1 strong {
-            font-weight: 700;
+        .subtitle {
+            font-size: 16px;
+            color: #6B7280;
+            font-weight: 400;
         }
 
         .card {
             background: white;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
-        }
-
-        .section {
+            border-radius: 24px;
             padding: 32px 28px;
-            position: relative;
-        }
-
-        .section::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 28px;
-            right: 28px;
-            height: 1px;
-            background: #E8E4DF;
-        }
-
-        .section:last-child::after {
-            display: none;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
         }
 
         .section-header {
             display: flex;
             align-items: center;
-            gap: 10px;
-            margin-bottom: 18px;
+            gap: 12px;
+            margin-bottom: 20px;
         }
 
         .section-icon {
-            width: 20px;
-            height: 20px;
-            color: #00C896;
+            width: 24px;
+            height: 24px;
+            color: #E07856;
         }
 
         .section-title {
-            font-size: 12px;
-            font-weight: 700;
+            font-size: 18px;
+            font-weight: 600;
             color: #1a1a1a;
-            text-transform: uppercase;
-            letter-spacing: 1.2px;
+        }
+
+        .section-description {
+            font-size: 14px;
+            color: #6B7280;
+            margin-bottom: 20px;
+            line-height: 1.5;
         }
 
         .email-display {
             background: #F5F1ED;
-            padding: 20px 22px;
-            border-radius: 14px;
-            margin-bottom: 14px;
+            padding: 18px 20px;
+            border-radius: 16px;
+            margin-bottom: 16px;
             cursor: pointer;
             transition: all 0.3s ease;
             border: 2px solid transparent;
@@ -123,8 +108,8 @@
         }
 
         .email-display:hover {
-            border-color: #00C896;
-            background: #E6F9F3;
+            border-color: #E07856;
+            background: #FFF5F2;
         }
 
         .email-display:active {
@@ -134,64 +119,64 @@
         .email-text {
             color: #1a1a1a;
             font-size: 15px;
-            font-weight: 600;
+            font-weight: 500;
             text-align: center;
-            word-break: break-all;
         }
 
         .btn {
             width: 100%;
             padding: 16px 24px;
-            border: none;
-            border-radius: 50px;
+            border: 2px solid #E8E4DF;
+            border-radius: 16px;
             font-size: 15px;
-            font-weight: 700;
+            font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 10px;
-            letter-spacing: 0.3px;
+            background: white;
+            color: #1a1a1a;
+        }
+
+        .btn:hover {
+            border-color: #E07856;
+            background: #FFF5F2;
         }
 
         .btn:active {
-            transform: scale(0.97);
+            transform: scale(0.98);
         }
 
-        .btn-secondary {
-            background: white;
-            color: #1a1a1a;
-            border: 2px solid #E8E4DF;
-        }
-
-        .btn-secondary:hover {
-            border-color: #00C896;
-            background: #F5F1ED;
+        .btn-icon {
+            width: 20px;
+            height: 20px;
         }
 
         .btn-primary {
             background: #E07856;
             color: white;
-            box-shadow: 0 4px 16px rgba(224, 120, 86, 0.3);
+            border: none;
         }
 
         .btn-primary:hover {
             background: #d06745;
-            box-shadow: 0 6px 20px rgba(224, 120, 86, 0.4);
-            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(224, 120, 86, 0.3);
         }
 
-        .btn-success {
-            background: #00C896;
-            color: white;
-            box-shadow: 0 4px 16px rgba(0, 200, 150, 0.3);
+        .btn-icon-external {
+            width: 16px;
+            height: 16px;
+            margin-left: 4px;
         }
 
-        .btn-success:hover {
-            background: #00b385;
-            box-shadow: 0 6px 20px rgba(0, 200, 150, 0.4);
-            transform: translateY(-2px);
+        .help-text {
+            margin-top: 16px;
+            font-size: 13px;
+            color: #9CA3AF;
+            text-align: center;
+            line-height: 1.5;
         }
 
         .feedback {
@@ -207,23 +192,12 @@
             align-items: center;
             justify-content: center;
             gap: 8px;
-        }
-
-        .feedback.show {
-            opacity: 1;
-        }
-
-        .feedback.success {
             background: #D1FAE5;
             color: #065F46;
         }
 
-        .help-text {
-            margin-top: 16px;
-            font-size: 13px;
-            color: #6B7280;
-            line-height: 1.6;
-            text-align: center;
+        .feedback.show {
+            opacity: 1;
         }
 
         .qr-container {
@@ -259,27 +233,26 @@
 
         .footer {
             text-align: center;
-            margin-top: 40px;
+            margin-top: 48px;
         }
 
         .footer-text {
-            font-size: 12px;
+            font-size: 13px;
             color: #9CA3AF;
-            font-weight: 500;
-            letter-spacing: 0.5px;
+            font-weight: 400;
         }
 
         @media (max-width: 480px) {
             body {
-                padding: 24px 16px;
-            }
-
-            .section {
-                padding: 28px 24px;
+                padding: 32px 16px;
             }
 
             h1 {
-                font-size: 22px;
+                font-size: 28px;
+            }
+
+            .card {
+                padding: 28px 24px;
             }
         }
     </style>
@@ -288,83 +261,82 @@
     <div class="container">
         <!-- Header -->
         <div class="header">
-            <div class="logo">
-                <img src="https://pharmacology.fr/hubfs/logo-pharmacology-1.svg" alt="Pharmacology Logo" style="width: 100%; height: 100%; object-fit: contain; padding: 12px;">
+            <div class="logo-text">
+                <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 4L11 7V12H6L3 15V17L6 20H11V25L14 28H18L21 25V20H26L29 17V15L26 12H21V7L18 4H14Z" fill="#E07856"/>
+                </svg>
+                <span class="brand-text">Pharmacology</span>
             </div>
-            <div class="brand-name">Pharmacie Raspail</div>
-            <h1>Accès <strong>rapide</strong></h1>
+            <h1>Accès rapide</h1>
+            <p class="subtitle">Pharmacie Raspail — Bienvenue</p>
         </div>
 
+        <!-- Section Email -->
         <div class="card">
-            <!-- Section Email -->
-            <div class="section">
-                <div class="section-header">
-                    <svg class="section-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <div class="section-title">Contact</div>
-                </div>
-                <div class="email-display" id="emailDisplay">
-                    <div class="email-text">pharma.raspail@gmail.com</div>
-                </div>
-                <button class="btn btn-secondary" id="copyEmailBtn">
-                    Copier l'email
-                </button>
-                <div class="feedback" id="emailFeedback"></div>
+            <div class="section-header">
+                <svg class="section-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="section-title">Copier l'email</div>
             </div>
+            <div class="email-display" id="emailDisplay">
+                <div class="email-text">pharma.raspail@gmail.com</div>
+            </div>
+            <button class="btn" id="copyEmailBtn">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 16H6C5.46957 16 4.96086 15.7893 4.58579 15.4142C4.21071 15.0391 4 14.5304 4 14V6C4 5.46957 4.21071 4.96086 4.58579 4.58579C4.96086 4.21071 5.46957 4 6 4H14C14.5304 4 15.0391 4.21071 15.4142 4.58579C15.7893 4.96086 16 5.46957 16 6V8M10 20H18C18.5304 20 19.0391 19.7893 19.4142 19.4142C19.7893 19.0391 20 18.5304 20 18V10C20 9.46957 19.7893 8.96086 19.4142 8.58579C19.0391 8.21071 18.5304 8 18 8H10C9.46957 8 8.96086 8.21071 8.58579 8.58579C8.21071 8.96086 8 9.46957 8 10V18C8 18.5304 8.21071 19.0391 8.58579 19.4142C8.96086 19.7893 9.46957 20 10 20Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Copier l'email
+            </button>
+            <div class="feedback" id="emailFeedback"></div>
+        </div>
 
-            <!-- Section Wi-Fi -->
-            <div class="section">
-                <div class="section-header">
-                    <svg class="section-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 12.55C6.59 10.92 8.71 10 12 10C15.29 10 17.41 10.92 19 12.55M1 8.82C3.65 6.04 7.44 4.5 12 4.5C16.56 4.5 20.35 6.04 23 8.82M8.5 16.5C9.33 15.67 10.67 15 12 15C13.33 15 14.67 15.67 15.5 16.5M12 20H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <div class="section-title">Wi-Fi Visiteurs</div>
-                </div>
-                <button class="btn btn-primary" id="wifiBtn">
-                    Afficher le QR Code
-                </button>
-                <div class="qr-container" id="qrContainer">
-                    <div class="qr-code">
-                        <canvas id="qrCanvas"></canvas>
-                    </div>
-                </div>
-                <div class="help-text">
-                    Scannez le QR Code avec votre appareil photo pour vous connecter au Wi-Fi.
-                </div>
-                <div class="feedback" id="wifiFeedback"></div>
+        <!-- Section WhatsApp -->
+        <div class="card">
+            <div class="section-header">
+                <svg class="section-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="section-title">WhatsApp</div>
             </div>
+            <p class="section-description">Contactez-nous directement sur WhatsApp.</p>
+            <button class="btn" id="whatsappBtn">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Ouvrir WhatsApp
+            </button>
+        </div>
 
-            <!-- Section Avis Google -->
-            <div class="section">
-                <div class="section-header">
-                    <svg class="section-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <div class="section-title">Votre avis compte</div>
-                </div>
-                <button class="btn btn-success" id="reviewBtn">
-                    Laisser un avis Google
-                </button>
-                <div class="help-text">
-                    Vous serez invité à vous connecter à votre compte Google.
-                </div>
+        <!-- Section Avis Google -->
+        <div class="card">
+            <div class="section-header">
+                <svg class="section-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="section-title">Avis Google</div>
             </div>
+            <button class="btn btn-primary" id="reviewBtn">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Laisser un avis Google
+                <svg class="btn-icon-external" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11M15 3H21M21 3V9M21 3L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <p class="help-text">Tu seras peut-être invité à te connecter à Google.</p>
         </div>
 
         <div class="footer">
-            <p class="footer-text">PHARMACIE RASPAIL • 2025</p>
+            <p class="footer-text">Pharmacie Raspail © 2025</p>
         </div>
     </div>
 
-    <!-- QR Code Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-
     <script>
         const EMAIL = 'pharma.raspail@gmail.com';
-        const WIFI_SSID = 'MimounWifi';
-        const WIFI_PASSWORD = 'Mimoun55';
-        const WIFI_SECURITY = 'WPA';
+        const WHATSAPP_NUMBER = '33XXXXXXXXX'; // À remplacer par le vrai numéro
+        const WHATSAPP_MESSAGE = 'Bonjour, je vous contacte depuis le tag NFC de la pharmacie.';
         
         // Place ID Google - À remplacer par le vrai Place ID
         const GOOGLE_PLACE_ID = 'ChIJXXXXXXXXXXXXXXXXXXXX';
@@ -383,7 +355,7 @@
             feedback.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
             </svg> ${message}`;
-            feedback.classList.add('show', 'success');
+            feedback.classList.add('show');
             
             setTimeout(() => {
                 feedback.classList.remove('show');
@@ -398,7 +370,6 @@
                 showFeedback('emailFeedback', 'Email copié');
             } catch (err) {
                 console.error('Erreur copie:', err);
-                showFeedback('emailFeedback', 'Erreur de copie');
             }
         }
 
@@ -406,34 +377,11 @@
         document.getElementById('emailDisplay').addEventListener('click', copyEmail);
         document.getElementById('copyEmailBtn').addEventListener('click', copyEmail);
 
-        // Génération QR Code Wi-Fi
-        let qrGenerated = false;
-        document.getElementById('wifiBtn').addEventListener('click', function() {
-            const qrContainer = document.getElementById('qrContainer');
-            
-            if (!qrGenerated) {
-                // Format standard QR Wi-Fi
-                const wifiString = `WIFI:T:${WIFI_SECURITY};S:${WIFI_SSID};P:${WIFI_PASSWORD};;`;
-                
-                // Génération du QR Code
-                new QRCode(document.getElementById('qrCanvas'), {
-                    text: wifiString,
-                    width: 220,
-                    height: 220,
-                    colorDark: '#000000',
-                    colorLight: '#ffffff',
-                    correctLevel: QRCode.CorrectLevel.M
-                });
-                
-                qrGenerated = true;
-            }
-            
-            qrContainer.classList.toggle('show');
+        // WhatsApp
+        document.getElementById('whatsappBtn').addEventListener('click', function() {
             vibrate();
-            
-            if (qrContainer.classList.contains('show')) {
-                showFeedback('wifiFeedback', 'Scannez le QR Code');
-            }
+            const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+            window.open(whatsappURL, '_blank');
         });
 
         // Lien avis Google
