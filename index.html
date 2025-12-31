@@ -13,6 +13,13 @@
       background-color: #f9f9f9;
     }
 
+    .logo {
+      display: block;
+      margin: 0 auto 16px auto;
+      max-width: 180px;
+      height: auto;
+    }
+
     h1 {
       font-size: 22px;
       margin-bottom: 16px;
@@ -50,6 +57,14 @@
 </head>
 
 <body>
+
+  <!-- LOGO -->
+  <img
+    src="https://pharmacology.fr/hubfs/logo-pharmacology-1.svg"
+    alt="Pharmacology"
+    class="logo"
+  />
+
   <h1>Copier l’email</h1>
 
   <!-- CLIQUABLE = COPIE -->
@@ -77,11 +92,9 @@
       }
     }
 
-    // clic sur l’email = copie directe
     document.getElementById('email').addEventListener('click', copyEmail);
-
-    // clic sur le bouton = copie
     document.getElementById('copy').addEventListener('click', copyEmail);
   </script>
+
 </body>
 </html>
